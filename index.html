@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button
+      id="livechat_button"
+      class="fixed cursor-pointer bottom-[60px] left-[30px] w-[60px] h-[60px] flex items-center justify-center rounded-full bg-black z-10"
+    >
+      <div class="relative z-6">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="24"
+          viewBox="0 0 30 24"
+          fill="none"
+        >
+          <path
+            fill="#fff"
+            d="M20.612 0H9.505C4.565 0 .56 4.433.56 9.895c0 4.368 2.558 8.064 6.105 9.38L10.916 24l3.803-4.206h5.893c4.942 0 8.947-4.43 8.947-9.899C29.559 4.433 25.553 0 20.612 0ZM8.154 11.998c-1.096 0-1.985-.98-1.985-2.195 0-1.211.889-2.196 1.985-2.196s1.985.984 1.985 2.196c0 1.214-.889 2.195-1.985 2.195Zm6.905 0c-1.096 0-1.985-.98-1.985-2.195 0-1.211.888-2.196 1.985-2.196 1.096 0 1.985.984 1.985 2.196 0 1.214-.89 2.195-1.985 2.195Zm6.905 0c-1.097 0-1.986-.98-1.986-2.195 0-1.211.889-2.196 1.986-2.196 1.096 0 1.985.984 1.985 2.196 0 1.214-.89 2.195-1.985 2.195Z"
+          ></path>
+        </svg>
+      </div>
+    </button>
+
+    <div class="fixed right-[10px] bottom-[60px] z-10">
+      <div class="circlephone"></div>
+      <div class="circle-fill"></div>
+      <a id="fixed_wp" href="/">
+        <svg
+          viewBox="0 0 1777 1778"
+          fill="none"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M160.925 1610.59L614.342 1452.45L335.612 1163.29L160.925 1610.59Z"
+            fill="#000000"
+          ></path>
+          <ellipse cx="951" cy="811" rx="800" ry="794" fill="#000000"></ellipse>
+          <path
+            d="M908 1.09998C730.8 11 562.1 76.5 427 188C396 213.6 358.7 249.5 333.5 278C221.1 405.2 151.6 561 133.1 727.5C129.3 761.6 128.6 775.9 128.6 818C128.6 862.5 129.7 881.6 134.6 920.5C148.8 1032.6 187.1 1142.1 246.3 1239.6L251.8 1248.7L181 1457.6C142 1572.5 110.2 1666.6 110.3 1666.7C110.4 1666.8 208.3 1635.8 327.8 1597.9L545.1 1528.8L552.8 1532.9C582.1 1548.6 619.1 1566.1 643.5 1575.8C714.8 1604.2 792.4 1623.2 869 1630.9C928.4 1637 995.9 1636.2 1055 1628.9C1268.6 1602.5 1463.5 1493.5 1598.5 1325C1667.6 1238.8 1718.2 1140.2 1747.5 1034.6C1765.9 968.2 1775.3 903.2 1776.7 832.5C1780.6 628 1708.5 433.3 1571.2 277.7C1556 260.4 1518.9 223.3 1502.5 208.9C1474.6 184.4 1445.6 161.8 1417.5 142.8C1279.1 48.8 1116.3 -0.800025 949 0.0999752C934.4 0.199975 916 0.699975 908 1.09998ZM987.1 89C1122.3 95.7 1247.5 136.6 1359.5 210.5C1529 322.4 1645.3 500.6 1677.9 698.5C1684.9 740.8 1687.4 772.5 1687.4 817.5C1687.4 870.4 1683.7 909 1674 958C1638.9 1135.7 1539 1292.6 1391 1402.7C1307.3 1464.9 1207.3 1509.9 1104.5 1531.4C1022.4 1548.6 933.2 1551.5 850 1539.9C750.8 1526 652.4 1490.9 569.4 1439.8C563.3 1436.1 557.6 1433 556.9 1433C556.1 1433 487.2 1454.6 403.7 1481.1C320.3 1507.6 251.8 1529.1 251.6 1528.9C251.3 1528.7 272.4 1465.7 298.4 1389C324.4 1312.3 346.7 1246.3 348 1242.5L350.2 1235.5L338.8 1218.5C248.5 1083.5 207 924.2 219.6 761C235.7 552.1 341.9 361 512.5 233.7C648.3 132.4 818.1 80.6 987.1 89Z"
+            fill="#ffffff"
+          ></path>
+          <path
+            d="M655.2 458.5C643.5 461.8 634.6 468.3 620 484.4C601 505.4 591.7 518.9 581.6 540.2C569.7 565.2 563.7 590.8 562.3 622C559.8 682.8 585.2 750.7 639.1 826.8C676.9 880.2 685.9 892.1 709.6 920.5C786.6 1013.1 876.9 1085.6 963 1124C994.6 1138.1 1062.9 1163.3 1101.9 1175.1C1152.7 1190.5 1180.8 1194 1205.5 1188.1C1210.5 1186.9 1219.2 1185.2 1225 1184.4C1256.2 1180 1300.2 1156.2 1327 1129.1C1341.7 1114.3 1345.7 1107.3 1352 1084.9C1358 1063.9 1362 1034.8 1360.3 1025.1C1359.5 1021 1359.2 1020.6 1354.5 1018.8C1351.7 1017.7 1332.9 1008.7 1312.5 998.8C1241.7 964.2 1196.7 943.3 1185.3 939.6C1176.2 936.6 1175.9 936.8 1163.5 953.2C1144.6 978.4 1105.3 1025.1 1096.4 1032.9C1089.7 1038.9 1078.7 1044 1069.6 1045.3C1057.3 1047.1 1049.3 1044.9 1019.1 1031.6C976.7 1012.8 954.4 1001 924.6 981.3C877.1 950 837 914.2 800.9 870.8C772.4 836.6 739.1 787.3 733.2 770.7C731.3 765.4 730.7 761.4 730.6 755.5C730.6 740.5 735.5 730.4 750.9 713.9C756 708.4 766.5 696.4 774.2 687.2C786.4 672.6 789 668.8 794.6 657.6C802.2 642.5 802.2 644 794.3 626.1C791.3 619.3 776 582.8 760.3 545.1C744.6 507.4 730.3 473.5 728.4 469.9C726.6 466.2 723.7 462.1 722 460.6C719 458.1 718.2 458 708.2 458C702.3 458 689.2 457.8 679 457.5C664.4 457.1 659.4 457.3 655.2 458.5Z"
+            fill="#ffffff"
+          ></path>
+        </svg>
+      </a>
+    </div>
+
+    <header class="fixed top-0 w-full z-10">
+      <div
+        class="w-full h-0 absolute left-0 top-0 z-0 overlay_header transition-all duration-300 ease-in-out"
+      ></div>
+      <div class="container relative">
+        <nav
+          class="flex items-center text-white gap-12 text-[13px] py-4 font-medium"
+        >
+          <a href="/">
+            <img
+              width="150"
+              src="https://user13390.clients-cdnnow.ru/local/templates/main/image/logo-white.svg"
+              alt=""
+            />
+          </a>
+          <div class="flex items-center justify-between w-full">
+            <ul class="flex items-center gap-4 uppercase">
+              <li><a href="">Для жизни</a></li>
+              <li><a href="">Для бизнеса</a></li>
+              <li><a href="">О нас</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+            <div class="flex items-center gap-8">
+              <a href="/">+994 (55) 555 55 55</a>
+              <button class="py-2 px-32 border border-[#fff] cursor-pointer">
+                Onlayn müraciət et
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- banner -->
+      <section>
+        <div class="relative h-[100vh]">
+          <div
+            class="overlay_video w-full h-full absolute top-0 left-0 z-2"
+          ></div>
+          <div class="container">
+            <div class="absolute w-full h-full top-0 left-0">
+              <video
+                class="w-full h-full object-cover"
+                preload="metadata"
+                autoplay
+                muted
+              >
+                <source
+                  src="./assets/photos/banner_video.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ustunlukler -->
+      <section>
+        <div class="container">
+          <div class="flex flex-wrap justify-between mt-14">
+            <div class="w-[58%] pr-6">
+              <div class="flex flex-col gap-32">
+                <div>
+                  <a
+                    href=""
+                    class="duration-300 ease-in-out hover:bg-black hover:text-white transition-all border text-[12px] inline-block border-black py-3 px-28 uppercase font-medium"
+                    >Интерьеры для жизни</a
+                  >
+                  <h2 class="mt-6 ml-[33%] w-[55%] text-[13px]">
+                    Частные интерьеры для квартир и домов. Тонкая работа с
+                    образом жизни, комфортом и деталями —от идеи до полностью
+                    готового дома.
+                  </h2>
+                </div>
+                <div>
+                  <a
+                    href=""
+                    class="duration-300 ease-in-out hover:bg-black hover:text-white transition-all border text-[12px] inline-block border-black py-3 px-28 uppercase font-medium"
+                    >Интерьеры для жизни</a
+                  >
+                  <h2 class="mt-6 ml-[33%] w-[55%] text-[13px]">
+                    Частные интерьеры для квартир и домов. Тонкая работа с
+                    образом жизни, комфортом и деталями —от идеи до полностью
+                    готового дома.
+                  </h2>
+                </div>
+                <div class="flex flex-wrap gap-4">
+                  <div class="md:w-[31%] w-full h-[370px]">
+                    <img
+                      class="w-full h-full object-cover"
+                      src="https://user13390.clients-cdnnow.ru/upload/resize_cache/iblock/22e/220_300_2/jwdw6xx6dhvc5x9b6o11jebnct818i01.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="md:w-[60%] flex flex-col justify-between">
+                    <div>
+                      <p class="text-[10px] font-medium">CEO БАЛКОН</p>
+                      <p class="uppercase font-bold">Анастасия Бондаренко</p>
+                    </div>
+                    <p class="text-[13px] font-medium">
+                      «…Мы работаем с характером человека, а не со стилями —
+                      только так интерьер становится органичным продолжением
+                      владельца.»
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-[42%]">
+              <img
+                class="w-full h-full object-cover"
+                src="https://user13390.clients-cdnnow.ru/upload/resize_cache/iblock/426/960_1253_2/1xqlsiharcumz6j3yjn3r2yrf7f6tsb6.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- xidmetler -->
+      <section>
+        <div class="bg-[#111] py-6 mt-32">
+          <div class="container">
+            <div id="service_banner" class="h-[800px] relative">
+              <div
+                class="flex items-center justify-between flex-wrap relative z-8 p-12 text-white"
+              >
+                <div>
+                  <p class="text-2xl font-bold">12 лет</p>
+                  <p class="mt-3 text-[15px]">Основано в 2013 году</p>
+                </div>
+                <div>
+                  <p class="text-2xl font-bold">12 лет</p>
+                  <p class="mt-3 text-[15px]">Основано в 2013 году</p>
+                </div>
+                <div>
+                  <p class="text-2xl font-bold">12 лет</p>
+                  <p class="mt-3 text-[15px]">Основано в 2013 году</p>
+                </div>
+                <div>
+                  <p class="text-2xl font-bold">12 лет</p>
+                  <p class="mt-3 text-[15px]">Основано в 2013 году</p>
+                </div>
+              </div>
+              <div
+                class="absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] text-6xl text-white font-bold z-8"
+              >
+                дизайн / архитектура
+              </div>
+              <video
+                class="grayscale-[1] absolute left-0 top-0 w-full h-full object-cover"
+                autoplay
+                muted
+                playsinline
+                preload="metadata"
+              >
+                <source
+                  src="./assets/photos/service_banner.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="flex flex-wrap justify-between mt-6">
+              <a href="" class="w-[33%] relative h-[350px] service_card">
+                <img
+                  class="w-full h-full object-cover absolute left-0 top-0 z-0"
+                  src="./assets/photos/banner"
+                  alt=""
+                />
+                <div
+                  class="flex flex-col justify-between h-full p-6 relative z-2 text-white"
+                >
+                  <p class="text-2xl font-medium">Архитектура</p>
+                  <button
+                    class="duration-300 ease-in-out transition-all cursor-pointer bg-white/20 text-[13px] hover:bg-[#0071e3] py-3 px-8 backdrop-blur-[20px] rounded-[100px] inline-block w-fit"
+                  >
+                    <span>Смотреть портфолио</span>
+                  </button>
+                </div>
+              </a>
+              <a href="" class="w-[33%] relative h-[350px] service_card">
+                <img
+                  class="w-full h-full object-cover absolute left-0 top-0 z-0"
+                  src="./assets/photos/banner"
+                  alt=""
+                />
+                <div
+                  class="flex flex-col justify-between h-full p-6 relative z-2 text-white"
+                >
+                  <p class="text-2xl font-medium">Архитектура</p>
+                  <button
+                    class="duration-300 ease-in-out transition-all cursor-pointer bg-white/20 text-[13px] hover:bg-[#0071e3] py-3 px-8 backdrop-blur-[20px] rounded-[100px] inline-block w-fit"
+                  >
+                    <span>Смотреть портфолио</span>
+                  </button>
+                </div>
+              </a>
+              <a href="" class="w-[33%] relative h-[350px] service_card">
+                <img
+                  class="w-full h-full object-cover absolute left-0 top-0 z-0"
+                  src="./assets/photos/banner"
+                  alt=""
+                />
+                <div
+                  class="flex flex-col justify-between h-full p-6 relative z-2 text-white"
+                >
+                  <p class="text-2xl font-medium">Архитектура</p>
+                  <button
+                    class="duration-300 ease-in-out transition-all cursor-pointer bg-white/20 text-[13px] hover:bg-[#0071e3] py-3 px-8 backdrop-blur-[20px] rounded-[100px] inline-block w-fit"
+                  >
+                    <span>Смотреть портфолио</span>
+                  </button>
+                </div>
+              </a>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- mehsullar -->
+      <section>
+        <div id="products_section">
+          <div
+            class="text-white text-center flex flex-col h-full items-center justify-end z-2 relative pb-12"
+          >
+            <p class="text-6xl uppercase">Fedorova Elements</p>
+            <p class="text-xl mt-6">
+              A harmonious blend of aesthetics <br />
+              and functionality, where every detail contributes <br />
+              to the unity and harmony of the whole.
+            </p>
+          </div>
+        </div>
+        <div id="products_wrapper">
+          <div class="grid grid-cols-4 gap-2">
+            <a href="#" class="product_card relative h-[300px] overflow-hidden">
+              <p class="text-md font-bold uppercase absolute left-1/2 bottom-[40px] translate-x-[-50%] z-10">Tables</p>
+              <div class="absolute front_img bg-[#F8F4F0] w-full h-full">
+                <img class="w-full h-full object-contain" src="./assets/photos/front_img.png" alt="" />
+              </div>
+              <div class="absolute back_img opacity-0 w-full h-full">
+                <img class="w-full h-full object-cover" src="./assets/photos/back_img.webp" alt="" />
+              </div>
+            </a>
+            <a href="#" class="product_card relative h-[300px] overflow-hidden">
+              <p class="text-md font-bold uppercase absolute left-1/2 bottom-[40px] translate-x-[-50%] z-10">Tables</p>
+              <div class="absolute front_img bg-[#F8F4F0] w-full h-full">
+                <img class="w-full h-full object-contain" src="./assets/photos/front_img.png" alt="" />
+              </div>
+              <div class="absolute back_img opacity-0 w-full h-full">
+                <img class="w-full h-full object-cover" src="./assets/photos/back_img.webp" alt="" />
+              </div>
+            </a>
+            <a href="#" class="product_card relative h-[300px] overflow-hidden">
+              <p class="text-md font-bold uppercase absolute left-1/2 bottom-[40px] translate-x-[-50%] z-10">Tables</p>
+              <div class="absolute front_img bg-[#F8F4F0] w-full h-full">
+                <img class="w-full h-full object-contain" src="./assets/photos/front_img.png" alt="" />
+              </div>
+              <div class="absolute back_img opacity-0 w-full h-full">
+                <img class="w-full h-full object-cover" src="./assets/photos/back_img.webp" alt="" />
+              </div>
+            </a>
+            <a href="#" class="product_card relative h-[300px] overflow-hidden">
+              <p class="text-md font-bold uppercase absolute left-1/2 bottom-[40px] translate-x-[-50%] z-10">Tables</p>
+              <div class="absolute front_img bg-[#F8F4F0] w-full h-full">
+                <img class="w-full h-full object-contain" src="./assets/photos/front_img.png" alt="" />
+              </div>
+              <div class="absolute back_img opacity-0 w-full h-full">
+                <img class="w-full h-full object-cover" src="./assets/photos/back_img.webp" alt="" />
+              </div>
+            </a>
+            <a href="#" class="product_card relative h-[300px] overflow-hidden">
+              <p class="text-md font-bold uppercase absolute left-1/2 bottom-[40px] translate-x-[-50%] z-10">Tables</p>
+              <div class="absolute front_img bg-[#F8F4F0] w-full h-full">
+                <img class="w-full h-full object-contain" src="./assets/photos/front_img.png" alt="" />
+              </div>
+              <div class="absolute back_img opacity-0 w-full h-full">
+                <img class="w-full h-full object-cover" src="./assets/photos/back_img.webp" alt="" />
+              </div>
+            </a>
+            <a href="#" class="product_card relative h-[300px] overflow-hidden">
+              <p class="text-md font-bold uppercase absolute left-1/2 bottom-[40px] translate-x-[-50%] z-10">Tables</p>
+              <div class="absolute front_img bg-[#F8F4F0] w-full h-full">
+                <img class="w-full h-full object-contain" src="./assets/photos/front_img.png" alt="" />
+              </div>
+              <div class="absolute back_img opacity-0 w-full h-full">
+                <img class="w-full h-full object-cover" src="./assets/photos/back_img.webp" alt="" />
+              </div>
+            </a>
+            <a href="#" class="product_card relative h-[300px] overflow-hidden">
+              <p class="text-md font-bold uppercase absolute left-1/2 bottom-[40px] translate-x-[-50%] z-10">Tables</p>
+              <div class="absolute front_img bg-[#F8F4F0] w-full h-full">
+                <img class="w-full h-full object-contain" src="./assets/photos/front_img.png" alt="" />
+              </div>
+              <div class="absolute back_img opacity-0 w-full h-full">
+                <img class="w-full h-full object-cover" src="./assets/photos/back_img.webp" alt="" />
+              </div>
+            </a>
+            <a href="#" class="product_card relative h-[300px] overflow-hidden">
+              <p class="text-md font-bold uppercase absolute left-1/2 bottom-[40px] translate-x-[-50%] z-10">Tables</p>
+              <div class="absolute front_img bg-[#F8F4F0] w-full h-full">
+                <img class="w-full h-full object-contain" src="./assets/photos/front_img.png" alt="" />
+              </div>
+              <div class="absolute back_img opacity-0 w-full h-full">
+                <img class="w-full h-full object-cover" src="./assets/photos/back_img.webp" alt="" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- portfolio -->
+      <section>
+        <div class="container mt-24">
+          <h2 class="text-7xl font-medium">Portfolio</h2>
+          <div class="portfolio_carousel_viewport">
+            <div id="portfolio_wrapper_infinite_carousel">
+              <a href="#">
+                <img src="./assets/photos/banner" alt="" />
+                <p class="text-[15px] uppercase mt-4">lorem ipsum dolor</p>
+              </a>
+              <a href="#">
+                <img src="./assets/photos/banner" alt="" />
+                <p class="text-[15px] uppercase mt-4">lorem ipsum dolor</p>
+              </a>
+              <a href="#">
+                <img src="./assets/photos/banner" alt="" />
+                <p class="text-[15px] uppercase mt-4">lorem ipsum dolor</p>
+              </a>
+              <a href="#">
+                <img src="./assets/photos/banner" alt="" />
+                <p class="text-[15px] uppercase mt-4">lorem ipsum dolor</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- partnyorlar -->
+      <section>
+        <div class="container mt-24">
+          <h2 class="text-6xl font-medium">Partnyorlar</h2>
+          <div class="flex flex-wrap gap-5 mt-6">
+            <div class="w-[15%] h-[150px] bg-white">
+              <img
+                src="https://user13390.clients-cdnnow.ru/upload/iblock/458/gpjtnybljfl71eggy4kyv8yya558p9dr.webp"
+                alt=""
+              />
+            </div>
+            <div class="w-[15%] h-[150px] bg-white">
+              <img
+                src="https://user13390.clients-cdnnow.ru/upload/iblock/654/9jk0519buh7v5daqkgjwvh8axrfukryz.webp"
+                alt=""
+              />
+            </div>
+            <div class="w-[15%] h-[150px] bg-white">
+              <img
+                src="https://user13390.clients-cdnnow.ru/upload/iblock/02f/busl0dxem1yht430jit0nn0wgj4juv2d.webp"
+                alt=""
+              />
+            </div>
+            <div class="w-[15%] h-[150px] bg-white">
+              <img
+                src="https://user13390.clients-cdnnow.ru/upload/iblock/7c2/ou82stivwpv0vy9fc81e5creb979pi83.webp"
+                alt=""
+              />
+            </div>
+            <div class="w-[15%] h-[150px] bg-white">
+              <img
+                src="https://user13390.clients-cdnnow.ru/upload/iblock/932/bc80iteqfes4dlj1f3ecuqd3amshtikc.webp"
+                alt=""
+              />
+            </div>
+            <div class="w-[15%] h-[150px] bg-white">
+              <img
+                src="https://user13390.clients-cdnnow.ru/upload/iblock/e89/gp5cv2gmcb1e215yh2ewg2kzkh90q8x5.webp"
+                alt=""
+              />
+            </div>
+            <div class="w-[15%] h-[150px] bg-white">
+              <img
+                src="https://user13390.clients-cdnnow.ru/upload/iblock/458/gpjtnybljfl71eggy4kyv8yya558p9dr.webp"
+                alt=""
+              />
+            </div>
+            <div class="w-[15%] h-[150px] bg-white">
+              <img
+                src="https://user13390.clients-cdnnow.ru/upload/iblock/654/9jk0519buh7v5daqkgjwvh8axrfukryz.webp"
+                alt=""
+              />
+            </div>
+            <div class="w-[15%] h-[150px] bg-white">
+              <img
+                src="https://user13390.clients-cdnnow.ru/upload/iblock/02f/busl0dxem1yht430jit0nn0wgj4juv2d.webp"
+                alt=""
+              />
+            </div>
+            <div class="w-[15%] h-[150px] bg-white">
+              <img
+                src="https://user13390.clients-cdnnow.ru/upload/iblock/7c2/ou82stivwpv0vy9fc81e5creb979pi83.webp"
+                alt=""
+              />
+            </div>
+            <div class="w-[15%] h-[150px] bg-white">
+              <img
+                src="https://user13390.clients-cdnnow.ru/upload/iblock/932/bc80iteqfes4dlj1f3ecuqd3amshtikc.webp"
+                alt=""
+              />
+            </div>
+            <div class="w-[15%] h-[150px] bg-white">
+              <img
+                src="https://user13390.clients-cdnnow.ru/upload/iblock/e89/gp5cv2gmcb1e215yh2ewg2kzkh90q8x5.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- faydali melumatlar -->
+      <section>
+        <div class="bg-black py-12 mt-24">
+          <div class="container">
+            <h2 class="text-6xl font-medium text-white">Faydalı məlumatlar</h2>
+            <div class="flex flex-wrap mt-12 gap-y-12 justify-between">
+              <article class="w-[31%]">
+                <a href="">
+                  <img
+                    class="h-[300px] object-cover w-full"
+                    src="https://optim.tildacdn.com/tild3536-6632-4738-b665-643330393665/-/cover/432x324/center/center/-/format/webp/-_03_09_24__View0100.jpg"
+                    alt=""
+                  />
+                  <p class="mt-3 text-gray-500 text-[12px] uppercase">
+                    Monday, June 15
+                  </p>
+                  <p class="text-xl mt-2 font-bold text-white">
+                    Премиальный дизайн квартиры: сколько стоит проект и ремонт
+                    под ключ
+                  </p>
+                </a>
+              </article>
+              <article class="w-[31%]">
+                <a href="">
+                  <img
+                    class="h-[300px] object-cover w-full"
+                    src="https://optim.tildacdn.com/tild3536-6632-4738-b665-643330393665/-/cover/432x324/center/center/-/format/webp/-_03_09_24__View0100.jpg"
+                    alt=""
+                  />
+                  <p class="mt-3 text-gray-500 text-[12px] uppercase">
+                    Monday, June 15
+                  </p>
+                  <p class="text-xl mt-2 font-bold text-white">
+                    Премиальный дизайн квартиры: сколько стоит проект и ремонт
+                    под ключ
+                  </p>
+                </a>
+              </article>
+              <article class="w-[31%]">
+                <a href="">
+                  <img
+                    class="h-[300px] object-cover w-full"
+                    src="https://optim.tildacdn.com/tild3536-6632-4738-b665-643330393665/-/cover/432x324/center/center/-/format/webp/-_03_09_24__View0100.jpg"
+                    alt=""
+                  />
+                  <p class="mt-3 text-gray-500 text-[12px] uppercase">
+                    Monday, June 15
+                  </p>
+                  <p class="text-xl mt-2 font-bold text-white">
+                    Премиальный дизайн квартиры: сколько стоит проект и ремонт
+                    под ключ
+                  </p>
+                </a>
+              </article>
+              <article class="w-[31%]">
+                <a href="">
+                  <img
+                    class="h-[300px] object-cover w-full"
+                    src="https://optim.tildacdn.com/tild3536-6632-4738-b665-643330393665/-/cover/432x324/center/center/-/format/webp/-_03_09_24__View0100.jpg"
+                    alt=""
+                  />
+                  <p class="mt-3 text-gray-500 text-[12px] uppercase">
+                    Monday, June 15
+                  </p>
+                  <p class="text-xl mt-2 font-bold text-white">
+                    Премиальный дизайн квартиры: сколько стоит проект и ремонт
+                    под ключ
+                  </p>
+                </a>
+              </article>
+              <article class="w-[31%]">
+                <a href="">
+                  <img
+                    class="h-[300px] object-cover w-full"
+                    src="https://optim.tildacdn.com/tild3536-6632-4738-b665-643330393665/-/cover/432x324/center/center/-/format/webp/-_03_09_24__View0100.jpg"
+                    alt=""
+                  />
+                  <p class="mt-3 text-gray-500 text-[12px] uppercase">
+                    Monday, June 15
+                  </p>
+                  <p class="text-xl mt-2 font-bold text-white">
+                    Премиальный дизайн квартиры: сколько стоит проект и ремонт
+                    под ключ
+                  </p>
+                </a>
+              </article>
+              <article class="w-[31%]">
+                <a href="">
+                  <img
+                    class="h-[300px] object-cover w-full"
+                    src="https://optim.tildacdn.com/tild3536-6632-4738-b665-643330393665/-/cover/432x324/center/center/-/format/webp/-_03_09_24__View0100.jpg"
+                    alt=""
+                  />
+                  <p class="mt-3 text-gray-500 text-[12px] uppercase">
+                    Monday, June 15
+                  </p>
+                  <p class="text-xl mt-2 font-bold text-white">
+                    Премиальный дизайн квартиры: сколько стоит проект и ремонт
+                    под ключ
+                  </p>
+                </a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#1C1C1C] text-white">
+      <div class="container">
+        <div class="py-12">
+          <div class="flex flex-wrap gap-12 justify-between">
+            <div>
+              <p class="text-[21px] font-medium">Контакты</p>
+              <div class="flex flex-col gap-12 h-full">
+                <ul class="mt-6 text-[15px] flex flex-col gap-5 h-full">
+                  <li class="opacity-50">г. Санкт-Петербург, <br> Кожевенная линия 40</li>
+                  <li class="opacity-50"><a href="">info@nikafish.ru</a></li>
+                  <li class="font-medium"><a href="">+994 55 555 55 55</a></li>
+                </ul>
+                <div>
+                  <img width="150" src="https://user13390.clients-cdnnow.ru/local/templates/main/image/logo-white.svg" alt=""> 
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="text-[21px] font-medium">Часы работы</p>
+              <ul class="pt-6 text-[15px] flex flex-col justify-between h-full">
+                <li class="opacity-50">Пн-Пт - 09:00 - 21:00 <br> Сб-Вс - выходной</li>
+                <li><a class="opacity-80 text-[12px] underline" href="#">Политика конфиденциальности</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-[21px] font-medium">Соцсети</p>
+              <div class="flex flex-col h-full justify-between">
+                <ul class="mt-6 text-[15px] uppercase flex gap-2 flex-wrap">
+                  <li><a class="transition-all duration-300 ease-in-out border border-dashed border-[#4B4B4B] hover:border-[#806B57] hover:text-[#806B57] rounded-[100px] w-[48px] h-[48px] flex items-center justify-center text-[13px]" href="">vk</a></li>
+                  <li><a class="transition-all duration-300 ease-in-out border border-dashed border-[#4B4B4B] hover:border-[#806B57] hover:text-[#806B57] rounded-[100px] w-[48px] h-[48px] flex items-center justify-center text-[13px]" href="">ig</a></li>
+                  <li><a class="transition-all duration-300 ease-in-out border border-dashed border-[#4B4B4B] hover:border-[#806B57] hover:text-[#806B57] rounded-[100px] w-[48px] h-[48px] flex items-center justify-center text-[13px]" href="">tg</a></li>
+                  <li><a class="transition-all duration-300 ease-in-out border border-dashed border-[#4B4B4B] hover:border-[#806B57] hover:text-[#806B57] rounded-[100px] w-[48px] h-[48px] flex items-center justify-center text-[13px]" href="">wa</a></li>
+                  <li><a class="transition-all duration-300 ease-in-out border border-dashed border-[#4B4B4B] hover:border-[#806B57] hover:text-[#806B57] rounded-[100px] w-[48px] h-[48px] flex items-center justify-center text-[13px]" href="">be</a></li>
+                </ul>
+                <div class="flex items-center gap-12 justify-between text-[12px] opacity-70 font-[300]">
+                  <p>ИНН 783800350916</p>
+                  <p>ИП Рыбин Иван Вадимович</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a href="" class="transition-all duration-300 ease-in-out hover:bg-white hover:text-black text-[#977e65] border border-[1px] border-[#977e65] w-[162px] h-[162px] flex items-center justify-center rounded-full text-[14px] font-medium">Заказать звонок</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-black text-center py-4">
+            <div class="flex items-center justify-center">
+              <a class="font-[300] text-[12px] opacity-70">© 2026 Made by Okmedia MMC</a>
+            </div>
+          </div>
+    </footer>
+
+    <script src="./assets/javascript/jquery-4.0.0.min.js"></script>
+    <script src="./assets/javascript/script.js"></script>
+  </body>
+</html>
