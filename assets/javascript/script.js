@@ -110,4 +110,16 @@ $(document).ready(() => {
     window.addEventListener("resize", calculateCycleWidth);
     requestAnimationFrame(animate);
   }
+
+  // fixed phone hover
+  $("#fixed_right_phone").hover(
+    () => {
+      $("#right_box").addClass("active");
+    },
+    () => {
+      setTimeout(() => {
+        $("#right_box").removeClass("active");
+      }, 2000);
+    }
+  );
 });

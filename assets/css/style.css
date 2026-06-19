@@ -6,17 +6,15 @@
 
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Content_Font", sans-serif;
   min-height: 150vh;
 }
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1600px;
   margin-inline: auto;
-
-  /* Ekran ölçüsünə uyğun avtomatik yan boşluq */
-  padding-inline: clamp(16px, 2vw, 32px);
+  padding-inline: 20px;
 }
 
 /* Kiçik telefonlar */
@@ -50,14 +48,14 @@ body {
 /* Desktop */
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1400px;
   }
 }
 
 /* Böyük desktop */
 @media (min-width: 1440px) {
   .container {
-    max-width: 1320px;
+    max-width: 1400px;
   }
 }
 
@@ -358,4 +356,64 @@ body {
 .product_card:hover .back_img {
   opacity: 1;
   transform: scale(1);
+}
+
+#fixed_right_phone {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+#right_box {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+#right_box.active {
+  right: 0px;
+}
+@property --border-progress {
+  syntax: "<angle>";
+  initial-value: 360deg;
+  inherits: false;
+}
+
+.close_right_box {
+  position: relative;
+  border-radius: 50%;
+}
+
+.close_right_box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+
+  background: conic-gradient(
+    from -90deg,
+    #ccc var(--border-progress),
+    transparent 0
+  );
+
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+}
+
+#right_box.active .close_right_box::before {
+  animation: border_loader 2s ease-in-out forwards;
+}
+
+@keyframes border_loader {
+  from {
+    --border-progress: 360deg;
+  }
+
+  to {
+    --border-progress: 0deg;
+  }
 }
