@@ -1,0 +1,851 @@
+<!doctype html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Nurano - haqqımızda</title>
+  </head>
+  <body>
+    <button
+      id="livechat_button"
+      class="fixed cursor-pointer bottom-[60px] left-[30px] w-[60px] h-[60px] flex items-center justify-center rounded-full bg-black z-10"
+    >
+      <div class="relative z-6">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="24"
+          viewBox="0 0 30 24"
+          fill="none"
+        >
+          <path
+            fill="#fff"
+            d="M20.612 0H9.505C4.565 0 .56 4.433.56 9.895c0 4.368 2.558 8.064 6.105 9.38L10.916 24l3.803-4.206h5.893c4.942 0 8.947-4.43 8.947-9.899C29.559 4.433 25.553 0 20.612 0ZM8.154 11.998c-1.096 0-1.985-.98-1.985-2.195 0-1.211.889-2.196 1.985-2.196s1.985.984 1.985 2.196c0 1.214-.889 2.195-1.985 2.195Zm6.905 0c-1.096 0-1.985-.98-1.985-2.195 0-1.211.888-2.196 1.985-2.196 1.096 0 1.985.984 1.985 2.196 0 1.214-.89 2.195-1.985 2.195Zm6.905 0c-1.097 0-1.986-.98-1.986-2.195 0-1.211.889-2.196 1.986-2.196 1.096 0 1.985.984 1.985 2.196 0 1.214-.89 2.195-1.985 2.195Z"
+          ></path>
+        </svg>
+      </div>
+    </button>
+
+    <div class="fixed right-[10px] bottom-[60px] z-10">
+      <div class="circlephone"></div>
+      <div class="circle-fill"></div>
+      <a id="fixed_wp" href="/">
+        <svg
+          viewBox="0 0 1777 1778"
+          fill="none"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M160.925 1610.59L614.342 1452.45L335.612 1163.29L160.925 1610.59Z"
+            fill="#000000"
+          ></path>
+          <ellipse cx="951" cy="811" rx="800" ry="794" fill="#000000"></ellipse>
+          <path
+            d="M908 1.09998C730.8 11 562.1 76.5 427 188C396 213.6 358.7 249.5 333.5 278C221.1 405.2 151.6 561 133.1 727.5C129.3 761.6 128.6 775.9 128.6 818C128.6 862.5 129.7 881.6 134.6 920.5C148.8 1032.6 187.1 1142.1 246.3 1239.6L251.8 1248.7L181 1457.6C142 1572.5 110.2 1666.6 110.3 1666.7C110.4 1666.8 208.3 1635.8 327.8 1597.9L545.1 1528.8L552.8 1532.9C582.1 1548.6 619.1 1566.1 643.5 1575.8C714.8 1604.2 792.4 1623.2 869 1630.9C928.4 1637 995.9 1636.2 1055 1628.9C1268.6 1602.5 1463.5 1493.5 1598.5 1325C1667.6 1238.8 1718.2 1140.2 1747.5 1034.6C1765.9 968.2 1775.3 903.2 1776.7 832.5C1780.6 628 1708.5 433.3 1571.2 277.7C1556 260.4 1518.9 223.3 1502.5 208.9C1474.6 184.4 1445.6 161.8 1417.5 142.8C1279.1 48.8 1116.3 -0.800025 949 0.0999752C934.4 0.199975 916 0.699975 908 1.09998ZM987.1 89C1122.3 95.7 1247.5 136.6 1359.5 210.5C1529 322.4 1645.3 500.6 1677.9 698.5C1684.9 740.8 1687.4 772.5 1687.4 817.5C1687.4 870.4 1683.7 909 1674 958C1638.9 1135.7 1539 1292.6 1391 1402.7C1307.3 1464.9 1207.3 1509.9 1104.5 1531.4C1022.4 1548.6 933.2 1551.5 850 1539.9C750.8 1526 652.4 1490.9 569.4 1439.8C563.3 1436.1 557.6 1433 556.9 1433C556.1 1433 487.2 1454.6 403.7 1481.1C320.3 1507.6 251.8 1529.1 251.6 1528.9C251.3 1528.7 272.4 1465.7 298.4 1389C324.4 1312.3 346.7 1246.3 348 1242.5L350.2 1235.5L338.8 1218.5C248.5 1083.5 207 924.2 219.6 761C235.7 552.1 341.9 361 512.5 233.7C648.3 132.4 818.1 80.6 987.1 89Z"
+            fill="#ffffff"
+          ></path>
+          <path
+            d="M655.2 458.5C643.5 461.8 634.6 468.3 620 484.4C601 505.4 591.7 518.9 581.6 540.2C569.7 565.2 563.7 590.8 562.3 622C559.8 682.8 585.2 750.7 639.1 826.8C676.9 880.2 685.9 892.1 709.6 920.5C786.6 1013.1 876.9 1085.6 963 1124C994.6 1138.1 1062.9 1163.3 1101.9 1175.1C1152.7 1190.5 1180.8 1194 1205.5 1188.1C1210.5 1186.9 1219.2 1185.2 1225 1184.4C1256.2 1180 1300.2 1156.2 1327 1129.1C1341.7 1114.3 1345.7 1107.3 1352 1084.9C1358 1063.9 1362 1034.8 1360.3 1025.1C1359.5 1021 1359.2 1020.6 1354.5 1018.8C1351.7 1017.7 1332.9 1008.7 1312.5 998.8C1241.7 964.2 1196.7 943.3 1185.3 939.6C1176.2 936.6 1175.9 936.8 1163.5 953.2C1144.6 978.4 1105.3 1025.1 1096.4 1032.9C1089.7 1038.9 1078.7 1044 1069.6 1045.3C1057.3 1047.1 1049.3 1044.9 1019.1 1031.6C976.7 1012.8 954.4 1001 924.6 981.3C877.1 950 837 914.2 800.9 870.8C772.4 836.6 739.1 787.3 733.2 770.7C731.3 765.4 730.7 761.4 730.6 755.5C730.6 740.5 735.5 730.4 750.9 713.9C756 708.4 766.5 696.4 774.2 687.2C786.4 672.6 789 668.8 794.6 657.6C802.2 642.5 802.2 644 794.3 626.1C791.3 619.3 776 582.8 760.3 545.1C744.6 507.4 730.3 473.5 728.4 469.9C726.6 466.2 723.7 462.1 722 460.6C719 458.1 718.2 458 708.2 458C702.3 458 689.2 457.8 679 457.5C664.4 457.1 659.4 457.3 655.2 458.5Z"
+            fill="#ffffff"
+          ></path>
+        </svg>
+      </a>
+    </div>
+
+    <div class="text-white">
+      <div
+        id="fixed_right_phone"
+        class="flex items-center gap-4 cursor-pointer rotate-[-90deg] bg-black py-2 px-4 -right-15 bottom-16 fixed z-10"
+      >
+        <div class="w-[25px]">
+          <svg viewBox="0 0 32 32">
+            <path
+              fill-rule="evenodd"
+              class="invert"
+              d="M23.1928046,29.9984659 C22.8359607,29.9984659 17.2785925,30.2931635 9.28989516,22.7134914 C2.86079512,16.6135311 2.07524092,10.0539422 2.00679659,8.80762336 C1.94021893,7.5936684 2.28772944,4.54835611 6.47590001,2.28568846 C6.99483245,2.00530563 8.02367512,1.88114054 8.28936355,2.14689741 C8.40727446,2.26483869 11.9225129,8.05080755 12.0149127,8.24250103 C12.1073125,8.43388332 12.153668,8.62246489 12.153668,8.80731217 C12.153668,9.07151308 11.9654461,9.40199761 11.5886912,9.79845458 C11.2122474,10.1949115 10.8028259,10.5583823 10.3601155,10.8885556 C9.91740519,11.2190402 9.50798368,11.5691297 9.13122877,11.9391355 C8.75478497,12.30883 8.56656308,12.6131745 8.56656308,12.8509243 C8.59207414,13.4680154 9.09762883,15.678403 12.9488666,19.0632244 C16.8007267,22.4489793 18.6561901,23.4027788 18.8344565,23.4687513 C19.013034,23.5347237 19.1614337,23.5673987 19.280278,23.5673987 C19.5182776,23.5673987 19.8222326,23.3794395 20.1921431,23.0028988 C20.5617424,22.6260468 21.8052514,20.9213441 22.2016063,20.5444922 C22.5979611,20.1682626 22.9283606,19.9799922 23.1928046,19.9799922 C23.3776042,19.9799922 23.5658261,20.0260484 23.7571591,20.1184721 C23.9488033,20.2108957 29.7407488,23.6010073 29.8515042,23.7142807 C30.152037,24.0223595 29.9398596,24.9839388 29.7127489,25.5285226 C28.1267072,29.3318954 24.4080025,29.9984659 23.1928046,29.9984659 Z"
+            ></path>
+          </svg>
+        </div>
+        <p>Müraciət et</p>
+      </div>
+      <div
+        id="right_box"
+        class="transition-all duration-300 ease-in-out bg-black text-white p-4 w-[250px] fixed -right-100 bottom-1 z-10"
+      >
+        <div class="flex items-center justify-between">
+          <div class="w-[40px]">
+            <svg viewBox="0 0 32 32">
+              <path
+                fill="#ccc"
+                d="M9.5,4 C10.343615,4 11,4.65638504 11,5.5 L11,5.5 L11,11.5 C11,12.343615 10.343615,13 9.5,13 L9.5,13 L8,13 C7.9617363,15.8502585 9.19794761,18.798315 11.2135663,20.8139337 C13.229185,22.8295524 16,24 19,24 L19,24 L19,22.5 C19,21.656385 19.656385,21 20.5,21 L20.5,21 L26.5,21 C27.343615,21 28,21.656385 28,22.5 L28,22.5 L28,28.5 C28,29.343615 27.343615,30 26.5,30 L26.5,30 L19,30 C9.70826932,30 2,22.495064 2,13.2033333 L2,13.2033333 L2,5.5 C2,4.65638504 2.65638504,4 3.5,4 L3.5,4 Z M29,8 C30.1045695,8 31,8.8954305 31,10 C31,11.1045695 30.1045695,12 29,12 C27.8954305,12 27,11.1045695 27,10 C27,8.8954305 27.8954305,8 29,8 Z M23,8 C24.1045695,8 25,8.8954305 25,10 C25,11.1045695 24.1045695,12 23,12 C21.8954305,12 21,11.1045695 21,10 C21,8.8954305 21.8954305,8 23,8 Z M17,8 C18.1045695,8 19,8.8954305 19,10 C19,11.1045695 18.1045695,12 17,12 C15.8954305,12 15,11.1045695 15,10 C15,8.8954305 15.8954305,8 17,8 Z"
+              ></path>
+            </svg>
+          </div>
+          <div
+            class="w-[25px] h-[25px] flex items-center justify-center cursor-pointer close_right_box"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="10"
+              height="10"
+              x="0"
+              y="0"
+              viewBox="0 0 329.269 329"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+              class=""
+            >
+              <g>
+                <path
+                  d="M194.8 164.77 323.013 36.555c8.343-8.34 8.343-21.825 0-30.164-8.34-8.34-21.825-8.34-30.164 0L164.633 134.605 36.422 6.391c-8.344-8.34-21.824-8.34-30.164 0-8.344 8.34-8.344 21.824 0 30.164l128.21 128.215L6.259 292.984c-8.344 8.34-8.344 21.825 0 30.164a21.266 21.266 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25l128.21-128.214 128.216 128.214a21.273 21.273 0 0 0 15.082 6.25c5.46 0 10.922-2.09 15.082-6.25 8.343-8.34 8.343-21.824 0-30.164zm0 0"
+                  fill="#ccc"
+                  opacity="1"
+                  data-original="#ccc"
+                  class=""
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="mt-4 leading-[35px]">
+          <p>Mebel seçimi üzrə məsləhət</p>
+          <p>Fərdi ölçü və dizayn</p>
+          <p>Çatdırılma və quraşdırma</p>
+          <a
+            href="#"
+            class="flex mt-2 items-center gap-2 bg-white w-fit px-4 rounded-full"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="20"
+              height="20"
+              x="0"
+              y="0"
+              viewBox="0 0 513.64 513.64"
+              style="enable-background: new 0 0 512 512"
+              xml:space="preserve"
+              class=""
+            >
+              <g>
+                <path
+                  d="m499.66 376.96-71.68-71.68c-25.6-25.6-69.12-15.359-79.36 17.92-7.68 23.041-33.28 35.841-56.32 30.72-51.2-12.8-120.32-79.36-133.12-133.12-7.68-23.041 7.68-48.641 30.72-56.32 33.28-10.24 43.52-53.76 17.92-79.36l-71.68-71.68c-20.48-17.92-51.2-17.92-69.12 0L18.38 62.08c-48.64 51.2 5.12 186.88 125.44 307.2s256 176.641 307.2 125.44l48.64-48.64c17.921-20.48 17.921-51.2 0-69.12z"
+                  fill="#000000"
+                  opacity="1"
+                  data-original="#000000"
+                  class=""
+                ></path>
+              </g>
+            </svg>
+            <span class="text-black text-[14px]">Birbaşa əlaqə</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <header class="fixed top-0 w-full z-[11]">
+      <div class="w-full h-0 absolute left-0 top-0 z-0 overlay_header transition-all duration-300 ease-in-out"></div>
+      <div class="container relative">
+        <nav class="flex items-center text-white gap-12 text-[13px] py-4 font-medium">
+          <a href="/" class="flex h-[50px] overflow-hidden">
+            <img class="scale-[3.5]" width="150" src="./assets/photos/logo.svg" alt="" />
+          </a>
+          <div class="flex items-center justify-between w-full">
+            <ul class="flex items-center gap-6 uppercase text-[13px]">
+              <li>
+                <a class="duration-300 ease-in-out transition-all hover:opacity-70" href="">Ana səhifə</a>
+              </li>
+              <li>
+                <a class="duration-300 ease-in-out transition-all hover:opacity-70" href="">Haqqımızda</a>
+              </li>
+              <li>
+                <a class="duration-300 ease-in-out transition-all hover:opacity-70" href="">Portfolio</a>
+              </li>
+              <li>
+                <a class="duration-300 ease-in-out transition-all hover:opacity-70" href="">Xidmətlər</a>
+              </li>
+              <li>
+                <a class="duration-300 ease-in-out transition-all hover:opacity-70" href="">Daxili üslublar</a>
+              </li>
+              <li>
+                <a class="duration-300 ease-in-out transition-all hover:opacity-70" href="">Komanda</a>
+              </li>
+              <li>
+                <a class="duration-300 ease-in-out transition-all hover:opacity-70" href="">Əlaqə</a>
+              </li>
+            </ul>
+            <div class="flex items-center gap-8">
+              <a href="/">+994 (55) 555 55 55</a>
+              <button class="py-2 px-24 border border-[#fff] cursor-pointer uppercase transition-all duration-300 ease-in-out hover:bg-white hover:text-black">Sifariş ver</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- banner -->
+      <section>
+        <div class="relative h-[100vh]">
+          <div
+            class="overlay_video w-full h-full absolute top-0 left-0 z-2"
+          ></div>
+          <div class="container h-full">
+            <div class="absolute w-full h-full top-0 left-0">
+              <img
+                class="absolute w-full h-full object-cover"
+                src="./assets/photos/banner"
+                alt=""
+              />
+            </div>
+            <div class="flex items-end h-full justify-between pb-12">
+              <h1 class="text-8xl text-white relative z-2 w-1/2">Haqqımızda</h1>
+              <div class="relative z-2 p-4 bg-white w-[330px] mr-12">
+                <div class="flex flex-wrap justify-between">
+                  <div class="w-[100px] h-[100px] rounded-full overflow-hidden">
+                    <img
+                      class="w-full h-full object-cover"
+                      src="./assets/photos/banner_woman.webp"
+                      alt=""
+                    />
+                  </div>
+                  <div class="text-black w-[60%]">
+                    <div class="uppercase">
+                      <p class="text-[10px]">Dizayner məsləhəti</p>
+                      <p class="text-[16px] font-bold">Aylin</p>
+                    </div>
+                    <p class="text-[12px] mt-8">
+                      Məkanınıza uyğun mebel seçmək üçün sizə kömək edək.
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="uppercase mt-[35px] duration-300 ease-in-out hover:bg-white hover:text-black transition-all border text-[12px] inline-block border-black py-3 w-full text-center bg-black text-white text-xl"
+                  >Məsləhət al</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <ul class="breadcrumb flex items-center gap-3 mt-3 font-semibold text-[13px]">
+            <li>
+              <a href="#">Ana səhifə</a>
+            </li>
+            <li>
+              <span>-</span>
+            </li>
+            <li>
+              <a class="opacity-50 hover:opacity-100" href="#">Haqqımızda</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="flex flex-wrap justify-between mt-24">
+            <div class="text-5xl w-[40%] font-[600] leading-18 uppercase">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </div>
+            <div
+              class="text-[18px] text-opacity-70 w-1/2 leading-[35px] font-semibold"
+            >
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters, as opposed to using 'Content here,
+              content here', making it look like readable English. Many desktop
+              publishing packages and web page editors now use Lorem Ipsum as
+              their default model text, and a search for 'lorem ipsum' will
+              uncover many web sites still in their infancy. Various versions
+              have evolved over the years, sometimes by accident, sometimes on
+              purpose (injected humour and the like). Lorem ipsum dolor sit,
+              amet consectetur adipisicing elit. Tempora, aliquid. Quam natus
+              debitis repellendus eum ex, consequatur nihil vel quisquam soluta
+              cum vero maiores temporibus qui recusandae earum iure, autem
+              voluptas quos in modi adipisci!
+            </div>
+          </div>
+
+          <div class="h-[900px] mt-12">
+            <img
+              class="w-full h-full object-cover"
+              src="https://user13390.clients-cdnnow.ru/upload/resize_cache/iblock/110/2400_1400_2/rdewv39r9ol6o9eiipupk06ersnnzvig.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2 class="mt-24 text-7xl w-[70%] font-semibold">
+            Lorem ipsum dolor sit <br />
+            amet consectetur?
+          </h2>
+          <div class="flex flex-wrap justify-between mt-12">
+            <div class="w-1/2 sticky top-[90px] h-[500px]">
+              <img
+                class="w-full h-full object-cover"
+                src="https://user13390.clients-cdnnow.ru/upload/resize_cache/iblock/620/1356_1080_2/j8klukxsc97ww4djp9nztrmsvs6e1iba.webp"
+                alt=""
+              />
+            </div>
+            <div class="w-[45%] flex flex-col justify-between">
+              <ol class="list-decimal flex flex-col gap-8 about_faq">
+                <li class="pl-[80px] text-[18px] w-[85%]">
+                  <div
+                    class="flex items-center gap-2 border-b border-b-[2px] cursor-pointer faq_title uppercase"
+                  >
+                    <span class="font-bold"
+                      >Lorem ipsum dolor, sit amet consectetur</span
+                    >
+                    <span>
+                      <svg
+                        class="svg-sprite-icon icon-arrow-down transition-all ease-in-out duration-300"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_386_2734)">
+                          <path
+                            d="M15 7.5L10 12.5L5 7.5"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_386_2734">
+                            <rect
+                              width="20"
+                              height="20"
+                              fill="white"
+                              transform="translate(20) rotate(90)"
+                            ></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="hidden faq_answer mt-4 leading-[30px] w-full">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae molestiae suscipit amet deserunt at eaque ut
+                    reprehenderit dignissimos laudantium voluptatibus eligendi
+                    atque, nostrum vero!
+                  </div>
+                </li>
+                <li class="pl-[80px] text-[18px] w-[85%]">
+                  <div
+                    class="flex items-center gap-2 border-b border-b-[2px] cursor-pointer faq_title uppercase"
+                  >
+                    <span class="font-bold"
+                      >Lorem ipsum dolor, sit amet consectetur</span
+                    >
+                    <span>
+                      <svg
+                        class="svg-sprite-icon icon-arrow-down transition-all ease-in-out duration-300"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_386_2734)">
+                          <path
+                            d="M15 7.5L10 12.5L5 7.5"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_386_2734">
+                            <rect
+                              width="20"
+                              height="20"
+                              fill="white"
+                              transform="translate(20) rotate(90)"
+                            ></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="hidden faq_answer mt-4 leading-[30px] w-full">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae molestiae suscipit amet deserunt at eaque ut
+                    reprehenderit dignissimos laudantium voluptatibus eligendi
+                    atque, nostrum vero!
+                  </div>
+                </li>
+                <li class="pl-[80px] text-[18px] w-[85%]">
+                  <div
+                    class="flex items-center gap-2 border-b border-b-[2px] cursor-pointer faq_title uppercase"
+                  >
+                    <span class="font-bold"
+                      >Lorem ipsum dolor, sit amet consectetur</span
+                    >
+                    <span>
+                      <svg
+                        class="svg-sprite-icon icon-arrow-down transition-all ease-in-out duration-300"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_386_2734)">
+                          <path
+                            d="M15 7.5L10 12.5L5 7.5"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_386_2734">
+                            <rect
+                              width="20"
+                              height="20"
+                              fill="white"
+                              transform="translate(20) rotate(90)"
+                            ></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="hidden faq_answer mt-4 leading-[30px] w-full">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae molestiae suscipit amet deserunt at eaque ut
+                    reprehenderit dignissimos laudantium voluptatibus eligendi
+                    atque, nostrum vero!
+                  </div>
+                </li>
+                <li class="pl-[80px] text-[18px] w-[85%]">
+                  <div
+                    class="flex items-center gap-2 border-b border-b-[2px] cursor-pointer faq_title uppercase"
+                  >
+                    <span class="font-bold"
+                      >Lorem ipsum dolor, sit amet consectetur</span
+                    >
+                    <span>
+                      <svg
+                        class="svg-sprite-icon icon-arrow-down transition-all ease-in-out duration-300"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_386_2734)">
+                          <path
+                            d="M15 7.5L10 12.5L5 7.5"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_386_2734">
+                            <rect
+                              width="20"
+                              height="20"
+                              fill="white"
+                              transform="translate(20) rotate(90)"
+                            ></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="hidden faq_answer mt-4 leading-[30px] w-full">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae molestiae suscipit amet deserunt at eaque ut
+                    reprehenderit dignissimos laudantium voluptatibus eligendi
+                    atque, nostrum vero!
+                  </div>
+                </li>
+                <li class="pl-[80px] text-[18px] w-[85%]">
+                  <div
+                    class="flex items-center gap-2 border-b border-b-[2px] cursor-pointer faq_title uppercase"
+                  >
+                    <span class="font-bold"
+                      >Lorem ipsum dolor, sit amet consectetur</span
+                    >
+                    <span>
+                      <svg
+                        class="svg-sprite-icon icon-arrow-down transition-all ease-in-out duration-300"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_386_2734)">
+                          <path
+                            d="M15 7.5L10 12.5L5 7.5"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_386_2734">
+                            <rect
+                              width="20"
+                              height="20"
+                              fill="white"
+                              transform="translate(20) rotate(90)"
+                            ></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="hidden faq_answer mt-4 leading-[30px] w-full">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vitae molestiae suscipit amet deserunt at eaque ut
+                    reprehenderit dignissimos laudantium voluptatibus eligendi
+                    atque, nostrum vero!
+                  </div>
+                </li>
+              </ol>
+              <a
+                href="#"
+                class="bg-black text-white py-1 px-16 inline-block w-fit duration-300 ease-in-out transition-all hover:bg-white hover:text-black border ml-[40%]"
+                >Sizinlə maraqlanırıq</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="bg-black mt-24 py-12 px-43">
+          <div class="container">
+            <div class="flex flex-wrap">
+              <div class="w-1/2 p-10 bg-white">
+                <h2 class="text-3xl font-semibold uppercase">
+                  Lorem ipsum dolor sit
+                </h2>
+                <p class="mt-8 text-[16px] leading-[25px] w-1/2">
+                  Ответьте на 3 коротких вопроса, чтобы стать ближе к
+                  пространству вашего характера. Мы оформим заявку исходя из
+                  ответов и вернемся к вам с персональным предложением.
+                </p>
+                <a
+                  href=""
+                  class="bg-black text-white py-3 px-30 text-[14px] mt-6 inline-block duration-300 ease-in-out transition-all hover:bg-white hover:text-black uppercase border"
+                  >Lorem ipsum</a
+                >
+              </div>
+              <div class="w-1/2">
+                <img
+                  src="https://user13390.clients-cdnnow.ru/local/templates/main/assets/img/quiz-form/1400.webp?v=6"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2 class="text-5xl uppercase font-semibold mt-24">
+            Lorem ipsum dolor sit amet
+          </h2>
+          <div class="flex flex-wrap justify-between mt-10">
+            <div class="w-[45%] flex flex-col gap-8">
+              <p class="border border-[#ccc] py-4 px-12 text-[15px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                turpis justo, convallis eu nunc nec, laoreet tincidunt dui.
+                Curabitur quis lectus felis. Vestibulum ac porta odio.
+                Pellentesque suscipit ex ac arcu commodo, eget dictum nulla
+                laoreet. Mauris diam ante, porta id odio congue, convallis
+                imperdiet leo.
+              </p>
+              <p class="border border-[#ccc] py-4 px-12 text-[15px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                turpis justo, convallis eu nunc nec, laoreet tincidunt dui.
+                Curabitur quis lectus felis. Vestibulum ac porta odio.
+                Pellentesque suscipit ex ac arcu commodo, eget dictum nulla
+                laoreet. Mauris diam ante, porta id odio congue, convallis
+                imperdiet leo.
+              </p>
+              <p class="border border-[#ccc] py-4 px-12 text-[15px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                turpis justo, convallis eu nunc nec, laoreet tincidunt dui.
+                Curabitur quis lectus felis. Vestibulum ac porta odio.
+                Pellentesque suscipit ex ac arcu commodo, eget dictum nulla
+                laoreet. Mauris diam ante, porta id odio congue, convallis
+                imperdiet leo.
+              </p>
+              <p class="border border-[#ccc] py-4 px-12 text-[15px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                turpis justo, convallis eu nunc nec, laoreet tincidunt dui.
+                Curabitur quis lectus felis. Vestibulum ac porta odio.
+                Pellentesque suscipit ex ac arcu commodo, eget dictum nulla
+                laoreet. Mauris diam ante, porta id odio congue, convallis
+                imperdiet leo.
+              </p>
+              <p class="border border-[#ccc] py-4 px-12 text-[15px]">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                turpis justo, convallis eu nunc nec, laoreet tincidunt dui.
+                Curabitur quis lectus felis. Vestibulum ac porta odio.
+                Pellentesque suscipit ex ac arcu commodo, eget dictum nulla
+                laoreet. Mauris diam ante, porta id odio congue, convallis
+                imperdiet leo.
+              </p>
+            </div>
+            <div class="w-1/2">
+              <img
+                class="w-full h-full object-cover"
+                src="https://user13390.clients-cdnnow.ru/upload/iblock/674/onuotcpdv606dshi354rcxqkpis4luz2.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="bg-[#E7E7E7] py-30 mt-24">
+          <div class="container">
+            <a
+              href=""
+              class="bg-black text-white text-center px-30 py-3 uppercase text-[14px] duration-300 ease-in-out transition-all hover:bg-white hover:text-black border"
+              >lorem ipsum</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="mt-24">
+            <h2 class="uppercase text-5xl w-[70%] leading-[70px]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </h2>
+            <div class="flex flex-wrap justify-between mt-12 text-[15px]">
+              <div class="w-[49%]">
+                Pellentesque viverra auctor scelerisque. In eget mauris et magna
+                suscipit semper. Donec porta quis lectus nec auctor. Etiam
+                tempor bibendum enim. Pellentesque quis dolor libero. Phasellus
+                tincidunt non purus eget volutpat. Quisque eros diam, blandit eu
+                egestas iaculis, viverra sed nibh. Sed a ipsum quam. Proin
+                dictum nunc at leo gravida gravida. Curabitur bibendum, metus ut
+                convallis mattis, augue lectus imperdiet ipsum, in ullamcorper
+                magna sem molestie odio. Nunc eu enim vel dolor scelerisque
+                blandit. Maecenas sollicitudin libero risus, nec facilisis lorem
+                placerat id.
+              </div>
+              <div class="w-[50%]">
+                Aenean consectetur lacinia dolor eget volutpat. Nam ut maximus
+                tortor. Quisque non nisi vel augue convallis tristique quis ac
+                nisi. Vivamus velit magna, accumsan eu lobortis eu, hendrerit
+                sit amet neque.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="flex justify-between items-center mt-24">
+            <h2 class="uppercase text-6xl font-semibold">Lorem ipsum dolor</h2>
+            <a
+              href="#"
+              class="bg-black text-white border px-24 py-2 text-[14px] uppercase hover:bg-white hover:text-black duration-300 ease-in-out transition-all"
+              >Lorem ipsum</a
+            >
+          </div>
+        </div>
+        <div id="about_portfolio">
+          <div class="portfolio_carousel_viewport">
+            <div
+              id="portfolio_wrapper_infinite_carousel"
+              style="transform: translate3d(-471.501px, 0px, 0px)"
+            >
+              <a href="#">
+                <img src="./assets/photos/banner" alt="" />
+                <p class="text-[15px] uppercase mt-4">Modern mətbəx layihəsi</p>
+              </a>
+              <a href="#">
+                <img src="./assets/photos/banner" alt="" />
+                <p class="text-[15px] uppercase mt-4">Minimalist qonaq otağı</p>
+              </a>
+              <a href="#">
+                <img src="./assets/photos/banner" alt="" />
+                <p class="text-[15px] uppercase mt-4">Rahat yataq otağı</p>
+              </a>
+              <a href="#">
+                <img src="./assets/photos/banner" alt="" />
+                <p class="text-[15px] uppercase mt-4">Funksional iş məkanı</p>
+              </a>
+              <a href="#" aria-hidden="true" tabindex="-1">
+                <img src="./assets/photos/banner" alt="" />
+                <p class="text-[15px] uppercase mt-4">
+                  Modern mətbəx layihəsi
+                </p> </a
+              ><a href="#" aria-hidden="true" tabindex="-1">
+                <img src="./assets/photos/banner" alt="" />
+                <p class="text-[15px] uppercase mt-4">
+                  Minimalist qonaq otağı
+                </p> </a
+              ><a href="#" aria-hidden="true" tabindex="-1">
+                <img src="./assets/photos/banner" alt="" />
+                <p class="text-[15px] uppercase mt-4">Rahat yataq otağı</p> </a
+              ><a href="#" aria-hidden="true" tabindex="-1">
+                <img src="./assets/photos/banner" alt="" />
+                <p class="text-[15px] uppercase mt-4">Funksional iş məkanı</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="mt-24">
+            <ul class="flex justify-between items-center flex-wrap font-semibold uppercase text-[13px]">
+              <li><a href="" class="underline underline-offset-5">Whatsapp</a></li>
+              <li><a href="" class="underline underline-offset-5">Telefon</a></li>
+              <li><a href="" class="underline underline-offset-5">Instagram</a></li>
+              <li><a href="" class="underline underline-offset-5">Linkedin</a></li>
+            </ul>
+            <div class="mt-12 h-[150px] overflow-hidden flex items-center">
+              <img class="invert w-full" width="410" height="71" src="./assets/photos/logo.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#1C1C1C] text-white">
+      <div class="container">
+        <div class="py-12">
+          <div class="flex flex-wrap gap-12 justify-between">
+            <div>
+              <p class="text-[21px] font-medium">Əlaqə</p>
+              <div class="flex flex-col gap-12 h-full">
+                <ul class="mt-6 text-[15px] flex flex-col gap-5 h-full">
+                  <li class="opacity-50">
+                    Bakı şəhəri, Nərimanov rayonu, <br />
+                    Əhməd Rəcəbli küçəsi 25
+                  </li>
+                  <li class="opacity-50"><a href="">info@nurano.az</a></li>
+                  <li class="font-medium"><a href="">+994 55 555 55 55</a></li>
+                </ul>
+                <div class="h-[50px] overflow-hidden flex">
+                  <img class="scale-[7]" width="150" src="./assets/photos/logo.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="text-[21px] font-medium">İş saatları</p>
+              <ul class="pt-6 text-[15px] flex flex-col justify-between h-full">
+                <li class="opacity-50">
+                  B.e.–Şənbə — 09:00–19:00 <br />
+                  Bazar — istirahət günü
+                </li>
+                <li>
+                  <a class="opacity-80 text-[12px] underline" href="#">Məxfilik siyasəti</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-[21px] font-medium">Sosial şəbəkələr</p>
+              <div class="flex flex-col h-full justify-between">
+                <ul class="mt-6 text-[15px] uppercase flex gap-2 flex-wrap">
+                  <li>
+                    <a
+                      class="transition-all duration-300 ease-in-out border border-dashed border-[#4B4B4B] hover:border-[#806B57] hover:text-[#806B57] rounded-[100px] w-[48px] h-[48px] flex items-center justify-center text-[13px]"
+                      href=""
+                      >fb</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="transition-all duration-300 ease-in-out border border-dashed border-[#4B4B4B] hover:border-[#806B57] hover:text-[#806B57] rounded-[100px] w-[48px] h-[48px] flex items-center justify-center text-[13px]"
+                      href=""
+                      >ig</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="transition-all duration-300 ease-in-out border border-dashed border-[#4B4B4B] hover:border-[#806B57] hover:text-[#806B57] rounded-[100px] w-[48px] h-[48px] flex items-center justify-center text-[13px]"
+                      href=""
+                      >tg</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="transition-all duration-300 ease-in-out border border-dashed border-[#4B4B4B] hover:border-[#806B57] hover:text-[#806B57] rounded-[100px] w-[48px] h-[48px] flex items-center justify-center text-[13px]"
+                      href=""
+                      >wa</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="transition-all duration-300 ease-in-out border border-dashed border-[#4B4B4B] hover:border-[#806B57] hover:text-[#806B57] rounded-[100px] w-[48px] h-[48px] flex items-center justify-center text-[13px]"
+                      href=""
+                      >be</a
+                    >
+                  </li>
+                </ul>
+                <div class="flex items-center gap-12 justify-between text-[12px] opacity-70 font-[300]">
+                  <p>VÖEN 1234567891</p>
+                  <p>Nurano Mebel MMC</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a
+                href=""
+                class="transition-all duration-300 ease-in-out hover:bg-white hover:text-black text-[#977e65] border border-[1px] border-[#977e65] w-[162px] h-[162px] flex items-center justify-center rounded-full text-[14px] font-medium"
+                >Zəng sifariş et</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-black text-center py-4">
+        <div class="flex items-center justify-center">
+          <a class="font-[300] text-[12px] opacity-70">© 2026 Made by Okmedia MMC</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/javascript/jquery-4.0.0.min.js"></script>
+    <script src="./assets/javascript/script.js"></script>
+  </body>
+</html>

@@ -7,7 +7,9 @@ $(document).ready(() => {
     }
   });
 
-  const carousel = document.getElementById("portfolio_wrapper_infinite_carousel");
+  const carousel = document.getElementById(
+    "portfolio_wrapper_infinite_carousel",
+  );
 
   if (carousel) {
     const originalItems = Array.from(carousel.children);
@@ -30,7 +32,8 @@ $(document).ready(() => {
 
     const calculateCycleWidth = () => {
       cycleWidth =
-        carousel.children[originalItems.length]?.offsetLeft || carousel.scrollWidth / 2;
+        carousel.children[originalItems.length]?.offsetLeft ||
+        carousel.scrollWidth / 2;
       normalizePosition();
       updateTransform();
     };
@@ -120,6 +123,24 @@ $(document).ready(() => {
       setTimeout(() => {
         $("#right_box").removeClass("active");
       }, 2000);
-    }
+    },
   );
+
+  $(".faq_title").click(function () {
+    if ($(this).next(".faq_answer").is(":hidden")) {
+      $(this).next(".faq_answer").slideDown();
+      $(this).find("svg").css({
+        transform: "rotate(180deg)",
+      });
+    } else {
+      $(this).next(".faq_answer").slideUp();
+      $(this).find("svg").css({
+        transform: "rotate(0deg)",
+      });
+    }
+  });
+
+  $(".custom_checkbox").click(function () {
+    $(this).toggleClass("active");
+  });
 });
